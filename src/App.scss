@@ -1,0 +1,43 @@
+.game-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+}
+
+.game-title {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+.letter {
+    font-size: x-large;
+}
+
+.right {
+    color: rgba(0, 255, 81, 0.992) !important;
+}
+
+.wrong {
+    color: red !important;
+}
+
+// Caret animation
+.caret {
+    width: 3px;
+    height: 2.5rem;
+    background-color: black;
+    animation: blink 1s steps(2, start) infinite;
+    display: inline-block;
+    position: absolute;
+    vertical-align: bottom;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+}
